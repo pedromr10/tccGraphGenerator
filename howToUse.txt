@@ -11,4 +11,4 @@ Passo a passo para desenvolvimento:
 2. Instalar bibliotecas necessárias: "pip install -r requirements.txt"
 3. Alterar os dados dos gráficos
 4. Executar o código: "python graphGenerator.py"
-5.  Serão geradas dois gráficos em png
+5.  Serão gerados dois gráficos em png
