@@ -4,12 +4,12 @@ import matplotlib.pyplot as plt
 #GRAFICO EMOCOES:
 #mostra a quantidade de informacoes retiradas e quantas estavam certas:
 df = pd.DataFrame({
-    'Emotion': ["sad", "angry", "happy", "neutral"],
-    'Total emotions': [100, 120, 130, 150],
-    'Correct emotions': [80, 90, 110, 140]
+    'Emotion': ["sad", "angry", "happy", "neutral", "surprised"],
+    'Total emotions': [33, 0, 1, 22, 0],
+    'Correct emotions': [33, 0, 0, 21, 0]
 })
 #cria um grafico de barras:
-df.plot(x='Emotion', kind='bar', y=['Total emotions', 'Correct emotions'], title='Comparison Between Total and Correctly Detected Emotions')
+df.plot(x='Emotion', kind='bar', y=['Total emotions', 'Correct emotions'], title='Detected vs. Correctly Detected Emotions')
 #ajuste de layout:
 plt.ylabel('Number of images')
 plt.xticks(rotation=0)
@@ -21,10 +21,10 @@ plt.savefig('grafico_emocoes.png')
 #GRAFICO IDENTIFICACAO YOLO:
 #mostra a quantidade de informacoes retiradas e quantas estavam certas:
 labels = ['Total object identifications', 'Correct object identifications']
-values = [200, 170] #total / certas
+values = [100, 83] #total / certas
 plt.figure(figsize=(6,4))
-plt.bar(labels, values, color=['skyblue', 'lightgreen'])
-plt.title('Comparison Between Total and Correctly Detected Objects')
+plt.bar(labels, values, color=['skyblue', 'lightgreen'], width=0.4)
+plt.title('Detected vs. Correctly Detected Objects')
 plt.ylabel('Number of Identifications')
 plt.tight_layout()
 plt.savefig('grafico_identificacao_yolo.png')
