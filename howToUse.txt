@@ -1,0 +1,11 @@
+Passo a passo para desenvolvimento:
+1. Criar um ambiente virtual:
+    1.1 Windows: 
+        1.1.1 Criar venv: "python -m venv nomeVenv"
+        1.1.2 Entrar venv: ".\nomeVenv\Scripts\activate"
+        1.1.3 Sair venv: "deactivate"
+    1.2 Linux:
+        1.2.1 Criar venv: "python3 -m venv nomeVenv"
+        1.2.2 Entrar venv: "source nomeVenv/bin/activate"
+        1.2.3 Sair venv: "deactivate"
+2. Instalar bibliotecas necessárias: "pip install -r requirements.txt"
